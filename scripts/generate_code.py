@@ -3,7 +3,7 @@ import sys
 import random
 import datetime
 
-# 🌍 Принудительно задаём UTF-8 для вывода в консоль (лечит ошибки cp1251 в Windows)
+# 🌍 Лечим кодировку консоли Windows
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
@@ -11,23 +11,24 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
 SRC_DIR = os.path.join(PROJECT_DIR, "src")
 
+# Список языков и файлов (добавляйте свои по аналогии)
 TARGET_FILES = [
-    {"lang": "python", "name": "core.py"},
-    {"lang": "javascript", "name": "utils.js"},
-    {"lang": "json", "name": "config.json"}
+    {"lang": "python",      "name": "main.py"},
+    {"lang": "javascript",  "name": "app.js"},
+    {"lang": "typescript",  "name": "index.ts"},
+    {"lang": "go",          "name": "service.go"},
+    {"lang": "cpp",         "name": "core.cpp"},
+    {"lang": "json",        "name": "config.json"}
 ]
 
-# Фигурные скобки в JS/JSON экранированы двойными {{ }} для метода .format()
+# ⚠️ ВАЖНО: Все { и } в шаблонах экранированы как {{ и }} для str.format()
 TEMPLATES = {
     "python": """# Auto-generated module | {timestamp}
 import random
-import math
 
 def calculate_{idx}():
-    \"\"\"Generated function for daily commit.\"\"\"
     base = {random_value}
-    result = sum(i * {multiplier} for i in range({loop_range}))
-    return math.sqrt(base + result)
+    return sum(i * {multiplier} for i in range({loop_range})) + base
 
 if __name__ == "__main__":
     print(calculate_{idx}())
@@ -40,6 +41,55 @@ export function compute_{idx}() {{
         sum += i * {multiplier};
     }}
     return Math.round(base + sum * 1.5);
+}}
+""",
+    "typescript": """// Auto-generated service | {timestamp}
+interface Config {{
+    version: string;
+    seed: number;
+}}
+
+export function init_{idx}(): Config {{
+    return {{
+        version: "1.{idx}.0",
+        seed: {random_value},
+    }};
+}}
+""",
+    "go": """package main
+
+// Auto-generated | {timestamp}
+import "fmt"
+
+func Process_{idx}() int {{
+    base := {random_value}
+    sum := 0
+    for i := 0; i < {loop_range}; i++ {{
+        sum += i * {multiplier}
+    }}
+    return base + sum
+}}
+
+func main() {{
+    fmt.Println(Process_{idx}())
+}}
+""",
+    "cpp": """// Auto-generated module | {timestamp}
+#include <iostream>
+#include <vector>
+
+int compute_{idx}() {{
+    int base = {random_value};
+    int sum = 0;
+    for (int i = 0; i < {loop_range}; ++i) {{
+        sum += i * {multiplier};
+    }}
+    return base + sum;
+}}
+
+int main() {{
+    std::cout << compute_{idx}() << std::endl;
+    return 0;
 }}
 """,
     "json": """{{
@@ -73,7 +123,6 @@ def generate_code():
             file.write(content)
         updated.append(f["name"])
 
-    # Эмодзи заменён на ASCII-безопасный текст, чтобы не ломать cp1251
     print(f"[OK] Updated: {', '.join(updated)}")
     return True
 

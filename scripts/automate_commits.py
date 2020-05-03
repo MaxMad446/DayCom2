@@ -15,7 +15,7 @@ LOG_FILE = os.path.join(PROJECT_DIR, "daemon.log")
 
 START_HOUR, END_HOUR = 8, 20
 ACTIVE_DAYS = [0, 1, 2, 3, 4, 5, 6]  # 0=Пн ... 6=Вс
-MAX_BACKFILL_DAYS = 365               # Лимит нагона за 1 запуск
+MAX_BACKFILL_DAYS = 2200               # Лимит нагона за 1 запуск
 BATCH_PUSH_SIZE = 30                  # Коммитов на 1 пуш
 
 COMMIT_MESSAGES = [

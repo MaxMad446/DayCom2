@@ -89,3 +89,8 @@ UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 
 2026-05-11 18:10:17,337 | INFO | 🛑 Daemon stopped by user.
 2026-05-11 18:11:25,993 | INFO | 🤖 Daemon started | Project: C:\Users\Maxim\Desktop\Project\DayCom2
 2026-05-11 18:11:25,993 | INFO | 🔍 Found 365 missed active days. Backfilling...
+2026-05-11 18:59:20,037 | INFO | 📤 Pushing backfilled commits in batches...
+2026-05-11 19:02:50,403 | INFO | ✅ All commits pushed successfully.
+2026-05-11 19:02:50,403 | INFO | ✅ Catch-up finished. State saved.
+2026-05-11 19:02:50,404 | INFO | 😴 Sleeping 13.0h until 12.05 08:01
+2026-05-11 19:24:07,365 | INFO | 🛑 Daemon stopped by user.
