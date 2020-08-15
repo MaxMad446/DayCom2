@@ -1,17 +1,17 @@
-// Auto-generated module | 2026-05-11T19:39:05.066515
+// Auto-generated module | 2026-05-11T19:39:08.263430
 #include <iostream>
 #include <vector>
 
-int compute_332() {
-    int base = 411;
+int compute_882() {
+    int base = 40;
     int sum = 0;
-    for (int i = 0; i < 13; ++i) {
-        sum += i * 4;
+    for (int i = 0; i < 22; ++i) {
+        sum += i * 7;
     }
     return base + sum;
 }
 
 int main() {
-    std::cout << compute_332() << std::endl;
+    std::cout << compute_882() << std::endl;
     return 0;
 }
