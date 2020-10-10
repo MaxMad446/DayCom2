@@ -1,12 +1,12 @@
-// Auto-generated service | 2026-05-11T19:46:37.125422
+// Auto-generated service | 2026-05-11T19:46:40.758719
 interface Config {
     version: string;
     seed: number;
 }
 
-export function init_459(): Config {
+export function init_737(): Config {
     return {
-        version: "1.459.0",
-        seed: 416,
+        version: "1.737.0",
+        seed: 495,
     };
 }
