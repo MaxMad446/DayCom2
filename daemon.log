@@ -107,3 +107,11 @@ UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 
     with open(path, "w", encoding="utf-8") as file:
          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Maxim\\Desktop\\Project\\DayCom2\\src\\core.cpp'
+2026-05-12 06:23:03,873 | INFO | 📤 Pushing backfilled commits in batches...
+2026-05-12 06:40:05,126 | INFO | ✅ All commits pushed successfully.
+2026-05-12 06:40:05,127 | INFO | ✅ Catch-up finished. State saved.
+2026-05-12 06:40:05,136 | INFO | 😴 Sleeping 25.5h until 13.05 08:08
+2026-05-12 18:14:51,186 | INFO | 🤖 Daemon started | Project: C:\Users\Maxim\Desktop\Project\DayCom2
+2026-05-12 18:14:51,192 | INFO | ✅ Already up-to-date for today.
+2026-05-12 18:14:51,192 | INFO | 😴 Sleeping 14.1h until 13.05 08:18
+2026-05-12 19:57:00,719 | INFO | 🛑 Daemon stopped by user.
