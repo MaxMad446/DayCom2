@@ -1,12 +1,12 @@
-// Auto-generated module | 2026-05-12T20:35:34.437869
+// Auto-generated module | 2026-05-12T20:35:35.264444
 #include <iostream>
 #include <vector>
 
 int compute_509() {
-    int base = 119;
+    int base = 492;
     int sum = 0;
-    for (int i = 0; i < 13; ++i) {
-        sum += i * 3;
+    for (int i = 0; i < 28; ++i) {
+        sum += i * 2;
     }
     return base + sum;
 }
