@@ -1,17 +1,17 @@
 package main
 
-// Auto-generated | 2026-05-14T18:14:59.877996
+// Auto-generated | 2026-05-14T18:15:01.240629
 import "fmt"
 
-func Process_198() int {
-    base := 433
+func Process_191() int {
+    base := 488
     sum := 0
-    for i := 0; i < 21; i++ {
+    for i := 0; i < 14; i++ {
         sum += i * 7
     }
     return base + sum
 }
 
 func main() {
-    fmt.Println(Process_198())
+    fmt.Println(Process_191())
 }
