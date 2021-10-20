@@ -1,17 +1,17 @@
-// Auto-generated module | 2026-05-11T20:35:25.682892
+// Auto-generated module | 2026-05-11T20:35:30.026518
 #include <iostream>
 #include <vector>
 
-int compute_360() {
-    int base = 306;
+int compute_834() {
+    int base = 356;
     int sum = 0;
     for (int i = 0; i < 25; ++i) {
-        sum += i * 7;
+        sum += i * 3;
     }
     return base + sum;
 }
 
 int main() {
-    std::cout << compute_360() << std::endl;
+    std::cout << compute_834() << std::endl;
     return 0;
 }
