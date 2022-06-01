@@ -9,8 +9,8 @@ PROJECT_DIR = r"C:\Users\Maxim\Desktop\Project\DayCom2"
 SCRIPTS_DIR = os.path.join(PROJECT_DIR, "scripts")
 
 # Диапазон для проверки
-START_DATE = datetime(2022, 1, 1)
-END_DATE   = datetime(2022, 5, 31)
+START_DATE = datetime(2022, 6, 1)
+END_DATE   = datetime(2022, 12, 31)
 
 # Автоматическое определение часового пояса (формат +HHMM, совместимый с Git)
 LOCAL_TZ = datetime.now().astimezone().strftime('%z')
