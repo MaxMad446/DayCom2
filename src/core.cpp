@@ -1,12 +1,12 @@
-// Auto-generated module | 2026-05-14T06:23:18.451620
+// Auto-generated module | 2026-05-14T06:23:19.980252
 #include <iostream>
 #include <vector>
 
 int compute_754() {
-    int base = 43;
+    int base = 64;
     int sum = 0;
-    for (int i = 0; i < 28; ++i) {
-        sum += i * 7;
+    for (int i = 0; i < 19; ++i) {
+        sum += i * 4;
     }
     return base + sum;
 }
