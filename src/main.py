@@ -1,9 +1,9 @@
-# Auto-generated module | 2026-05-13T20:31:31.519210
+# Auto-generated module | 2026-05-13T20:31:32.843059
 import random
 
-def calculate_274():
-    base = 458
-    return sum(i * 2 for i in range(15)) + base
+def calculate_750():
+    base = 61
+    return sum(i * 7 for i in range(5)) + base
 
 if __name__ == "__main__":
-    print(calculate_274())
+    print(calculate_750())
