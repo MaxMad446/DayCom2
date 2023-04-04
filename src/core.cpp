@@ -1,12 +1,12 @@
-// Auto-generated module | 2026-05-11T21:45:04.368885
+// Auto-generated module | 2026-05-11T21:45:05.259423
 #include <iostream>
 #include <vector>
 
 int compute_342() {
-    int base = 478;
+    int base = 461;
     int sum = 0;
-    for (int i = 0; i < 16; ++i) {
-        sum += i * 7;
+    for (int i = 0; i < 18; ++i) {
+        sum += i * 2;
     }
     return base + sum;
 }
