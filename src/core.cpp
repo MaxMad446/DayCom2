@@ -1,9 +1,9 @@
-// Auto-generated module | 2026-05-11T21:51:28.548620
+// Auto-generated module | 2026-05-11T21:51:29.568282
 #include <iostream>
 #include <vector>
 
-int compute_731() {
-    int base = 499;
+int compute_434() {
+    int base = 403;
     int sum = 0;
     for (int i = 0; i < 27; ++i) {
         sum += i * 7;
@@ -12,6 +12,6 @@ int compute_731() {
 }
 
 int main() {
-    std::cout << compute_731() << std::endl;
+    std::cout << compute_434() << std::endl;
     return 0;
 }
