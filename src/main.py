@@ -1,9 +1,9 @@
-# Auto-generated module | 2026-05-13T20:46:50.173039
+# Auto-generated module | 2026-05-13T20:46:51.713700
 import random
 
-def calculate_345():
-    base = 271
-    return sum(i * 4 for i in range(28)) + base
+def calculate_404():
+    base = 37
+    return sum(i * 4 for i in range(27)) + base
 
 if __name__ == "__main__":
-    print(calculate_345())
+    print(calculate_404())
