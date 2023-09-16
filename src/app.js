@@ -1,6 +1,6 @@
-// Auto-generated utility | 2026-05-13T20:55:00.969860
-export function compute_218() {
-    const base = 334;
+// Auto-generated utility | 2026-05-13T20:55:02.384878
+export function compute_957() {
+    const base = 290;
     let sum = 0;
     for (let i = 0; i < 8; i++) {
         sum += i * 8;
