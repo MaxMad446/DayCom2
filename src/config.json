@@ -1,9 +1,9 @@
 {
-    "version": "1.658.0",
-    "last_updated": "2026-05-11T22:39:32.855396",
-    "seed": 230,
+    "version": "1.444.0",
+    "last_updated": "2026-05-11T22:39:34.004188",
+    "seed": 226,
     "config": {
-        "loop_range": 18,
-        "multiplier": 8
+        "loop_range": 14,
+        "multiplier": 6
     }
 }
