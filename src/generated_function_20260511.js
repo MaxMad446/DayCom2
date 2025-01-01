@@ -1,8 +1,11 @@
-function generated_function_20260511() {
-    // Generated function 20260511_162543_045150
-    let result = 99;
-    for (let i = 0; i < 46; i++) {
-        result += i * 7;
+class Generated20260511 {
+    // Generated class 20260511_172823_780965
+    constructor() {
+        this.value = 722;
+        this.created = "20260511_172823_780965";
     }
-    return result;
+
+    process() {
+        return this.value * 2;
+    }
 }
