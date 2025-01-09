@@ -1,9 +1,9 @@
 class Generated20260511:
-    # Generated class 20260511_172900_018392
+    # Generated class 20260511_172902_657688
     
     def __init__(self):
-        self.value = 152
-        self.created = "20260511_172900_018392"
+        self.value = 371
+        self.created = "20260511_172902_657688"
     
     def process(self):
-        return self.value * 6
+        return self.value * 2
