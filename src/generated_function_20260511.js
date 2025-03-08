@@ -1,7 +1,7 @@
 function generated_function_20260511() {
-    // Generated function 20260511_173336_861444
-    let result = 232;
-    for (let i = 0; i < 15; i++) {
+    // Generated function 20260511_173337_880226
+    let result = 723;
+    for (let i = 0; i < 8; i++) {
         result += i * 8;
     }
     return result;
