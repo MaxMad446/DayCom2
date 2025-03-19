@@ -1,12 +1,12 @@
 public class Generated20260511 {
-    // Generated class 20260511_173420_173571
+    // Generated class 20260511_173437_178767
     
-    private int value = 190;
-    private String created = "20260511_173420_173571";
+    private int value = 500;
+    private String created = "20260511_173437_178767";
     
     public int process() {
         int result = value;
-        for (int i = 0; i < 39; i++) {
+        for (int i = 0; i < 38; i++) {
             result += i * 6;
         }
         return result;
