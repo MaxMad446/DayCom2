@@ -3,20 +3,20 @@ package main
 import "fmt"
 
 type Generated20260511 struct {
-    // Generated struct 20260511_173727_961040
+    // Generated struct 20260511_173729_986395
     Value int
     Created string
 }
 
 func (c *Generated20260511) Process() int {
     result := c.Value
-    for i := 0; i < 36; i++ {
-        result += i * 10
+    for i := 0; i < 39; i++ {
+        result += i * 4
     }
     return result
 }
 
 func main() {
-    obj := Generated20260511{Value: 617, Created: "20260511_173727_961040"}
+    obj := Generated20260511{Value: 378, Created: "20260511_173729_986395"}
     fmt.Println(obj.Process())
 }
