@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Generated20260511 struct {
-    // Generated struct 20260511_173729_986395
+    // Generated struct 20260511_173735_903256
     Value int
     Created string
 }
@@ -11,12 +11,12 @@ type Generated20260511 struct {
 func (c *Generated20260511) Process() int {
     result := c.Value
     for i := 0; i < 39; i++ {
-        result += i * 4
+        result += i * 7
     }
     return result
 }
 
 func main() {
-    obj := Generated20260511{Value: 378, Created: "20260511_173729_986395"}
+    obj := Generated20260511{Value: 115, Created: "20260511_173735_903256"}
     fmt.Println(obj.Process())
 }
