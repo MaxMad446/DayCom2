@@ -1,6 +1,6 @@
 def generated_function_20260511():
-    # Generated function 20260511_173748_629735
-    result = 276
-    for i in range(15):
-        result += i * 3
+    # Generated function 20260511_173752_304358
+    result = 642
+    for i in range(40):
+        result += i * 9
     return result
