@@ -1,6 +1,11 @@
 import os
+import sys
 import random
 import datetime
+
+# 🌍 Принудительно задаём UTF-8 для вывода в консоль (лечит ошибки cp1251 в Windows)
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
@@ -12,6 +17,7 @@ TARGET_FILES = [
     {"lang": "json", "name": "config.json"}
 ]
 
+# Фигурные скобки в JS/JSON экранированы двойными {{ }} для метода .format()
 TEMPLATES = {
     "python": """# Auto-generated module | {timestamp}
 import random
@@ -67,7 +73,8 @@ def generate_code():
             file.write(content)
         updated.append(f["name"])
 
-    print(f"✅ Updated: {', '.join(updated)}")
+    # Эмодзи заменён на ASCII-безопасный текст, чтобы не ломать cp1251
+    print(f"[OK] Updated: {', '.join(updated)}")
     return True
 
 if __name__ == "__main__":
