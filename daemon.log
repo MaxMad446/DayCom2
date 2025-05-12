@@ -29,3 +29,12 @@
         timestamp=ts, idx=idx, random_value=val, loop_range=loop, multiplier=mult
     )
 ValueError: unexpected '{' in field name
+2026-05-11 18:06:20,325 | WARNING | CMD: Traceback (most recent call last):
+  File "C:\Users\Maxim\Desktop\Project\DayCom2\scripts\generate_code.py", line 76, in <module>
+    generate_code()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Maxim\Desktop\Project\DayCom2\scripts\generate_code.py", line 63, in generate_code
+    content = TEMPLATES[f["lang"]].format(
+        timestamp=ts, idx=idx, random_value=val, loop_range=loop, multiplier=mult
+    )
+ValueError: unexpected '{' in field name
