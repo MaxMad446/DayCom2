@@ -62,3 +62,16 @@ ValueError: unexpected '{' in field name
            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
 2026-05-11 18:10:06,507 | INFO | 🛑 Daemon stopped by user.
+2026-05-11 18:10:15,846 | INFO | 🤖 Daemon started | Project: C:\Users\Maxim\Desktop\Project\DayCom2
+2026-05-11 18:10:15,847 | INFO | 🔍 Found 365 missed active days. Backfilling...
+2026-05-11 18:10:15,954 | WARNING | CMD: Traceback (most recent call last):
+  File "C:\Users\Maxim\Desktop\Project\DayCom2\scripts\generate_code.py", line 74, in <module>
+    generate_code()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Maxim\Desktop\Project\DayCom2\scripts\generate_code.py", line 70, in generate_code
+    print(f"\u2705 Updated: {', '.join(updated)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
