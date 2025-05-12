@@ -18,3 +18,14 @@
 2026-05-11 18:01:49,744 | INFO | ✅ Already up-to-date for today.
 2026-05-11 18:01:49,744 | INFO | 😴 Sleeping 14.8h until 12.05 08:48
 2026-05-11 18:04:35,942 | INFO | 🛑 Daemon stopped by user.
+2026-05-11 18:06:19,422 | INFO | 🤖 Daemon started | Project: C:\Users\Maxim\Desktop\Project\DayCom2
+2026-05-11 18:06:19,422 | INFO | 🔍 Found 365 missed active days. Backfilling...
+2026-05-11 18:06:19,530 | WARNING | CMD: Traceback (most recent call last):
+  File "C:\Users\Maxim\Desktop\Project\DayCom2\scripts\generate_code.py", line 76, in <module>
+    generate_code()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Maxim\Desktop\Project\DayCom2\scripts\generate_code.py", line 63, in generate_code
+    content = TEMPLATES[f["lang"]].format(
+        timestamp=ts, idx=idx, random_value=val, loop_range=loop, multiplier=mult
+    )
+ValueError: unexpected '{' in field name
