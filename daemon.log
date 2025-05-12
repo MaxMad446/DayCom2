@@ -87,3 +87,5 @@ UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 
            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
 2026-05-11 18:10:17,337 | INFO | 🛑 Daemon stopped by user.
+2026-05-11 18:11:25,993 | INFO | 🤖 Daemon started | Project: C:\Users\Maxim\Desktop\Project\DayCom2
+2026-05-11 18:11:25,993 | INFO | 🔍 Found 365 missed active days. Backfilling...
