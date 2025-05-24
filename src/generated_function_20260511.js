@@ -1,11 +1,8 @@
-class Generated20260511 {
-    // Generated class 20260511_173942_136903
-    constructor() {
-        this.value = 754;
-        this.created = "20260511_173942_136903";
+function generated_function_20260511() {
+    // Generated function 20260511_173947_636912
+    let result = 758;
+    for (let i = 0; i < 37; i++) {
+        result += i * 2;
     }
-
-    process() {
-        return this.value * 9;
-    }
+    return result;
 }
