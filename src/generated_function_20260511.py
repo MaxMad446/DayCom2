@@ -1,9 +1,6 @@
-class Generated20260511:
-    # Generated class 20260511_173952_393245
-    
-    def __init__(self):
-        self.value = 403
-        self.created = "20260511_173952_393245"
-    
-    def process(self):
-        return self.value * 2
+def generated_function_20260511():
+    # Generated function 20260511_173953_443134
+    result = 348
+    for i in range(22):
+        result += i * 8
+    return result
