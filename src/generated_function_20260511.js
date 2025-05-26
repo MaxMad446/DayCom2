@@ -1,8 +1,8 @@
 function generated_function_20260511() {
-    // Generated function 20260511_173950_734362
-    let result = 385;
-    for (let i = 0; i < 21; i++) {
-        result += i * 5;
+    // Generated function 20260511_173959_413657
+    let result = 93;
+    for (let i = 0; i < 26; i++) {
+        result += i * 7;
     }
     return result;
 }
