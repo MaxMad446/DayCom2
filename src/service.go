@@ -1,13 +1,13 @@
 package main
 
-// Auto-generated | 2026-05-12T04:14:02.504318
+// Auto-generated | 2026-05-12T04:14:04.100822
 import "fmt"
 
 func Process_882() int {
-    base := 381
+    base := 16
     sum := 0
-    for i := 0; i < 7; i++ {
-        sum += i * 7
+    for i := 0; i < 15; i++ {
+        sum += i * 5
     }
     return base + sum
 }
