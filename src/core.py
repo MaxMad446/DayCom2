@@ -1,12 +1,12 @@
-# Auto-generated module | 2026-05-11T18:18:42.867435
+# Auto-generated module | 2026-05-11T18:18:46.388169
 import random
 import math
 
-def calculate_780():
+def calculate_876():
     """Generated function for daily commit."""
-    base = 411
-    result = sum(i * 4 for i in range(14))
+    base = 336
+    result = sum(i * 2 for i in range(7))
     return math.sqrt(base + result)
 
 if __name__ == "__main__":
-    print(calculate_780())
+    print(calculate_876())
