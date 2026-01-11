@@ -10,7 +10,7 @@ PROJECT_DIR = "C:/Users/Maxim/Desktop/Project/DayCom2"
 SCRIPTS_DIR = os.path.join(PROJECT_DIR, "scripts")
 
 # Number of commits per day
-COMMITS_PER_DAY = random.randint(3, 8)
+# COMMITS_PER_DAY = random.randint(3, 8)  # Will be set in main() function
 
 # Time range for commits (8 AM to 8 PM)
 START_HOUR = 8
