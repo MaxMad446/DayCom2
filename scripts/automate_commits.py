@@ -143,6 +143,7 @@ def main():
             wait_for_next_execution()
             
             # Randomize commits per day for next cycle
+            global COMMITS_PER_DAY
             COMMITS_PER_DAY = random.randint(3, 8)
             
         except KeyboardInterrupt:
