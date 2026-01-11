@@ -89,6 +89,10 @@ def main():
     # Change to project directory
     os.chdir(PROJECT_DIR)
     
+    # Initialize global variable for commits per day
+    global COMMITS_PER_DAY
+    COMMITS_PER_DAY = random.randint(3, 8)
+    
     while True:
         try:
             # Check current day
