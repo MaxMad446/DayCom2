@@ -89,9 +89,9 @@ def main():
     # Change to project directory
     os.chdir(PROJECT_DIR)
     
-    # Initialize global variable for commits per day
-    global COMMITS_PER_DAY
-    COMMITS_PER_DAY = random.randint(3, 8)
+    # Initialize variable for commits per day
+    global commits_per_day
+    commits_per_day = random.randint(3, 8)
     
     while True:
         try:
@@ -103,10 +103,10 @@ def main():
                 wait_for_next_execution()
                 continue
             
-            print(f"Generating {COMMITS_PER_DAY} commits for today")
+            print(f"Generating {commits_per_day} commits for today")
             
             # Generate multiple commits
-            for i in range(COMMITS_PER_DAY):
+            for i in range(commits_per_day):
                 # Generate random code
                 generate_script = os.path.join(SCRIPTS_DIR, "generate_code.py")
                 if not run_command(f"python \"{generate_script}\"", SCRIPTS_DIR):
@@ -131,7 +131,7 @@ def main():
                     print("Failed to make commit. Continuing...")
                     continue
                 
-                print(f"Commit {i+1}/{COMMITS_PER_DAY} completed at {commit_time_str}")
+                print(f"Commit {i+1}/{commits_per_day} completed at {commit_time_str}")
                 
                 # Small delay between commits
                 time.sleep(random.randint(30, 120))
@@ -147,8 +147,8 @@ def main():
             wait_for_next_execution()
             
             # Randomize commits per day for next cycle
-            global COMMITS_PER_DAY
-            COMMITS_PER_DAY = random.randint(3, 8)
+            global commits_per_day
+            commits_per_day = random.randint(3, 8)
             
         except KeyboardInterrupt:
             print("\nAutomation stopped by user.")
