@@ -1,9 +1,6 @@
-class Generated20260119:
-    # Generated class 20260119_063524_060252
-    
-    def __init__(self):
-        self.value = 823
-        self.created = "20260119_063524_060252"
-    
-    def process(self):
-        return self.value * 4
+def generated_function_20260119():
+    # Generated function 20260119_064008_823388
+    result = 796
+    for i in range(18):
+        result += i * 4
+    return result
