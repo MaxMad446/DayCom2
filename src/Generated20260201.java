@@ -1,13 +1,13 @@
 public class Generated20260201 {
-    // Generated class 20260201_175217_507662
+    // Generated class 20260201_175332_700488
     
-    private int value = 201;
-    private String created = "20260201_175217_507662";
+    private int value = 99;
+    private String created = "20260201_175332_700488";
     
     public int process() {
         int result = value;
-        for (int i = 0; i < 19; i++) {
-            result += i * 5;
+        for (int i = 0; i < 13; i++) {
+            result += i * 10;
         }
         return result;
     }
