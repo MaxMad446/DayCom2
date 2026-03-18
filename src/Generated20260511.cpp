@@ -4,14 +4,14 @@ using namespace std;
 
 class Generated20260511 {
 public:
-    // Generated class 20260511_162504_343989
-    int value = 577;
-    string created = "20260511_162504_343989";
+    // Generated class 20260511_162516_596314
+    int value = 389;
+    string created = "20260511_162516_596314";
     
     int process() {
         int result = value;
-        for (int i = 0; i < 19; i++) {
-            result += i * 8;
+        for (int i = 0; i < 18; i++) {
+            result += i * 5;
         }
         return result;
     }
