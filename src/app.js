@@ -1,9 +1,9 @@
-// Auto-generated utility | 2026-05-12T06:17:19.664309
-export function compute_710() {
-    const base = 315;
+// Auto-generated utility | 2026-05-12T06:17:24.182975
+export function compute_895() {
+    const base = 84;
     let sum = 0;
-    for (let i = 0; i < 16; i++) {
-        sum += i * 7;
+    for (let i = 0; i < 14; i++) {
+        sum += i * 6;
     }
     return Math.round(base + sum * 1.5);
 }
